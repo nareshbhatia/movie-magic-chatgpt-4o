@@ -79,6 +79,15 @@ issues with it:
 
 ![commit-2](assets/commit-2.png)
 
+### commit-3
+
+Added real movie data. After doing this, the hydration errors went away. They
+were probably due to the fake image URLs in the movie data.
+
+As you can see the overall result is pretty good.
+
+![commit-3](assets/commit-3.png)
+
 ## Development Build
 
 ```shell
