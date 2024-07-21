@@ -1,7 +1,13 @@
+import Header from '@/components/Header';
+import MovieFilters from '@/components/MovieFilters';
+import MovieList from '@/components/MovieList';
+
 export default function HomePage() {
   return (
-    <div className="page">
-      <h1 className="heading1">Movie Magic</h1>
+    <div className="flex min-h-screen w-full flex-col">
+      <Header />
+      <MovieFilters />
+      <MovieList />
     </div>
   );
 }

@@ -48,6 +48,11 @@ The application should consists of the following components from top to bottom.
    and a plus icon to add the movie to the watchlist. The height of the row
    should be 64 pixels
 
+> Note: By default, ChatGPT used the Page Router. I gave it the following prompt
+> to switch to the App Router.
+
+In your implementation, use the App Router instead of the Page Router.
+
 ## Commits
 
 ### commit-1
@@ -55,6 +60,24 @@ The application should consists of the following components from top to bottom.
 Initial commit with my starter app.
 
 ![Screenshot](assets/screenshot.png)
+
+### commit-2
+
+Added code suggested by ChatGPT. While the code was nice and modular, there were
+issues with it:
+
+1. ChatGPT does not know that components in Next.js are defaulted to React
+   Server Components. I had to add `'use client'` on all components because they
+   had some kind of interactivity and/or used hooks.
+2. ChatGPT added the `<ThemeProvider>` from `next-themes` directly into
+   `app/layout.tsx`. This is not allowed because RootLayout is a server
+   component. Had to extract `<ThemeProvider>` into a client component called
+   `<AppProvider>`.
+3. `@radix-ui/react-avatar` import syntax was not correct.
+4. The app was reporting hydration errors on startup, e.g. "Error: Text content
+   does not match server-rendered HTML".
+
+![commit-2](assets/commit-2.png)
 
 ## Development Build
 
