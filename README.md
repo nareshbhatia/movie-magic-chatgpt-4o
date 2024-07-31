@@ -29,12 +29,12 @@ npm run dev
 
 Now point your browser to http://localhost:3000
 
-## Prompting round 1 - starting with textual requirements
+## Prompting round 1 - Start with textual requirements
 
 The detailed prompts and responses for this round are listed
 [here](./chatgpt-4o-start-with-text-as-requirements.md).
 
-## Implementation round 1 - starting with textual requirements
+## Implementation round 1
 
 Here are the commits for round 1.
 
@@ -71,12 +71,12 @@ As you can see the overall result is pretty good.
 
 ![commit-3](assets/commit-3.png)
 
-## Prompting round 2 - starting with image requirements
+## Prompting round 2 - Start with image requirements
 
 The detailed prompts and responses for this round are listed
 [here](./chatgpt-4o-start-with-image-as-requirements.md).
 
-## Implementation round 2 - starting with image requirements
+## Implementation round 2
 
 Here are the commits for round 2, starting with the raw implementation suggested
 by ChatGPT.
@@ -92,24 +92,25 @@ Added initial code suggested by ChatGPT. Here's the resulting output.
 ### commit-5
 
 Updated the code as suggested by ChatGPT. While it suggested changing 4 files,
-the real difference was only 1 file, MovieList.tsx, where it updated the code to
-use URLs for the thumbnail images. Here's the resulting output.
+the real difference was only in 1 file, `MovieList.tsx`, where it updated the
+code to use URLs for the thumbnail images. Here's the resulting output.
 
 ![commit-5](assets/commit-5.png)
 
 This is definitely better than round 1 (staring with a text prompt) and a
 reasonably good starting point.
 
-Here's a subset of requirement that it met very nicely:
+Here are some key requirements that it met very nicely:
 
 1. Header and Navigation height: 56px
 2. Filter & Sort height: 56px
 3. Movie List Header height: 40px (off by 1 pixel, because it used `h-10`
    instead of using paddings to get to 39px)
-4. Movie List Entry height: 112px, which is the exact requirement, however it
-   missed the 8px padding. Instead it fixed the height to 112px by using `h-28`.
+4. Movie List Entry height: 112px, which is the exact requirement. However it
+   missed the 8px padding requirement. Instead it fixed the height to 112px by
+   using `h-28`.
 
-Here's a list of major deviations from requirements:
+Here's a list of major deviations from the requirements:
 
 1. The Mode Toggle button is implemented using the Radix UI `<Switch>`
    component, but not correctly. Here's the generated code which is not correct:
@@ -123,7 +124,7 @@ Still pretty good for automatic generation!
 
 ### commit-6
 
-Manual tweaking to get closer to requirements. I spent about 45 minutes on this.
-Here's the resulting output.
+Manual tweaking to get closer to the requirements. I spent no more than 45
+minutes to get to this point. Here's the resulting output.
 
 ![commit-6](assets/commit-6.png)
