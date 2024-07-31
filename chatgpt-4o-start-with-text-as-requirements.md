@@ -1,3 +1,48 @@
+# ChatGPT 4o - Start with text as requirements
+
+In the interest of brevity, I have deleted intermediate responses from ChatGPT
+while I was trying to refine the requirements.
+
+## Prompt 1
+
+Write a movie streaming application called "Movie Magic".
+
+Use the following tech stack:
+
+1. TypeScript (https://www.typescriptlang.org/)
+2. Next.js (https://nextjs.org/)
+3. Tailwind CSS (https://tailwindcss.com/)
+4. Radix UI (https://www.radix-ui.com/primitives)
+
+The application should support light and dark mode, with dark mode as the
+default.
+
+The theme of the application should be red, This means that when you need to use
+accent colors for buttons etc., use red.
+
+The application should consist of the following components from top to bottom.
+
+1. Application header: 56 pixels tall, divided into left and right sections.
+   Left section consists of following components from left to right: Logo (a
+   film icon), application name ("Movie Magic"), navigation menu with 2 links
+   ("Movies" & "Watchlist"). The right section consists of 2 components that are
+   right justified, and they are (from left to right): light/dark mode toggle,
+   signed in user's avatar.
+
+2. Movie filters: Three movie filters all in one row: (a) Search input, (b)
+   "Categories" dropdown (multi-select), (c) "Certification" dropdown with
+   checkboxes for G, PG, PG-13, R, NR (multi-select)
+
+3. Movie List: one movie per row. Each row contains the movie image, movie name
+   and a plus icon to add the movie to the watchlist. The height of the row
+   should be 64 pixels
+
+## Prompt 2
+
+In your Movie Magic implementation use the App Router instead of Page Router.
+
+## ChatGPT response - Final code
+
 To use the App Router in your Movie Magic implementation with Next.js, you'll
 need to update your project structure and implement the necessary changes for
 the new routing system.

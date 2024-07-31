@@ -31,7 +31,12 @@ Now point your browser to http://localhost:3000
 
 ## Prompting round 1 - starting with textual requirements
 
+The detailed prompts and responses for this round are listed
+[here](./chatgpt-4o-start-with-text-as-requirements.md).
+
 ## Implementation round 1 - starting with textual requirements
+
+Here are the commits for round 1.
 
 ### commit-1
 
@@ -112,6 +117,7 @@ Here's a list of major deviations from requirements:
 2. Filter and Sort button does not look like the requirements.
 3. The Poster column is out of order.
 4. Column widths of the table do not match that of the image.
+5. There should be no borders between movie entries.
 
 Still pretty good for automatic generation!
 
