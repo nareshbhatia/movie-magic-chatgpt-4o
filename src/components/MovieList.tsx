@@ -8,7 +8,8 @@ const movies = [
     rating: 'R',
     year: 1994,
     runtime: '2:22',
-    poster: 'https://link-to-shawshank-poster.jpg',
+    poster:
+      'https://m.media-amazon.com/images/M/MV5BNDE3ODcxYzMtY2YzZC00NmNlLWJiNDMtZDViZWM2MzIxZDYwXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_.jpg',
   },
   {
     rank: 2,
@@ -17,7 +18,8 @@ const movies = [
     rating: 'R',
     year: 1972,
     runtime: '2:55',
-    poster: 'https://link-to-godfather-poster.jpg',
+    poster:
+      'https://m.media-amazon.com/images/M/MV5BM2MyNjYxNmUtYTAwNi00MTYxLWJmNWYtYzZlODY3ZTk3OTFlXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg',
   },
   {
     rank: 3,
@@ -26,7 +28,8 @@ const movies = [
     rating: 'PG-13',
     year: 2008,
     runtime: '2:32',
-    poster: 'https://link-to-dark-knight-poster.jpg',
+    poster:
+      'https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_.jpg',
   },
   {
     rank: 4,
@@ -35,7 +38,8 @@ const movies = [
     rating: 'R',
     year: 1974,
     runtime: '3:22',
-    poster: 'https://link-to-godfather-ii-poster.jpg',
+    poster:
+      'https://m.media-amazon.com/images/M/MV5BMWMwMGQzZTItY2JlNC00OWZiLWIyMDctNDk2ZDQ2YjRjMWQ0XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg',
   },
   {
     rank: 5,
@@ -44,7 +48,8 @@ const movies = [
     rating: 'NR',
     year: 1957,
     runtime: '1:36',
-    poster: 'https://link-to-12-angry-men-poster.jpg',
+    poster:
+      'https://m.media-amazon.com/images/M/MV5BMWU4N2FjNzYtNTVkNC00NzQ0LTg0MjAtYTJlMjFhNGUxZDFmXkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_.jpg',
   },
   {
     rank: 6,
@@ -53,7 +58,8 @@ const movies = [
     rating: 'R',
     year: 1993,
     runtime: '3:15',
-    poster: 'https://link-to-schindlers-list-poster.jpg',
+    poster:
+      'https://m.media-amazon.com/images/M/MV5BNDE4OTMxMTctNmRhYy00NWE2LTg3YzItYTk3M2UwOTU5Njg4XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_.jpg',
   },
   {
     rank: 7,
@@ -62,7 +68,8 @@ const movies = [
     rating: 'PG-13',
     year: 2003,
     runtime: '3:21',
-    poster: 'https://link-to-lotr-rotk-poster.jpg',
+    poster:
+      'https://m.media-amazon.com/images/M/MV5BNzA5ZDNlZWMtM2NhNS00NDJjLTk4NDItYTRmY2EwMWZlMTY3XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg',
   },
   {
     rank: 8,
@@ -71,7 +78,8 @@ const movies = [
     rating: 'R',
     year: 1994,
     runtime: '2:34',
-    poster: 'https://link-to-pulp-fiction-poster.jpg',
+    poster:
+      'https://m.media-amazon.com/images/M/MV5BNGNhMDIzZTUtNTBlZi00MTRlLWFjM2ItYzViMjE3YzI5MjljXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg',
   },
 ];
 

@@ -80,7 +80,37 @@ by ChatGPT.
 
 ### commit-4
 
-Added code suggested by ChatGPT. Here's the resulting output. Note that it does
-not match many requirements.
+Added initial code suggested by ChatGPT. Here's the resulting output.
 
 ![commit-4](assets/commit-4.png)
+
+### commit-5
+
+Updated the code as suggested by ChatGPT. While it suggested changing 4 files,
+the real difference was only 1 file, MovieList.tsx, where it updated the code to
+use URLs for the thumbnail images. Here's the resulting output.
+
+![commit-5](assets/commit-5.png)
+
+This is definitely better than round 1 (staring with a text prompt) and a
+reasonably good starting point.
+
+Here's a subset of requirement that it met very nicely:
+
+1. Header and Navigation height: 56px
+2. Filter & Sort height: 56px
+3. Movie List Header height: 40px (off by 1 pixel, because it used `h-10`
+   instead of using paddings to get to 39px)
+4. Movie List Entry height: 112px, which is the exact requirement, however it
+   missed the 8px padding. Instead it fixed the height to 112px by using `h-28`.
+
+Here's a list of major deviations from requirements:
+
+1. The Mode Toggle button is implemented using the Radix UI `<Switch>`
+   component, but not correctly. Here's the generated code which is not correct:
+   `<Switch className="rounded-full bg-gray-700 p-1">Mode</Switch>`.
+2. Filter and Sort button does not look like the requirements.
+3. The Poster column is out of order.
+4. Column widths of the table do not match that of the image.
+
+Still pretty good for automatic generation!
