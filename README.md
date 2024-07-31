@@ -76,4 +76,11 @@ The detailed prompts and responses for this round are listed
 Here are the commits for round 2, starting with the raw implementation suggested
 by ChatGPT.
 
+> Note: Before these commits, I reset the application back to the starter app.
+
+### commit-4
+
+Added code suggested by ChatGPT. Here's the resulting output. Note that it does
+not match many requirements.
+
 ![commit-4](assets/commit-4.png)

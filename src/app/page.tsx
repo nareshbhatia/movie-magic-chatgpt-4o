@@ -1,7 +1,16 @@
-export default function HomePage() {
+import FilterSort from '@/components/FilterSort';
+import Header from '@/components/Header';
+import MovieList from '@/components/MovieList';
+import type React from 'react';
+
+function HomePage() {
   return (
-    <div className="page">
-      <h1 className="heading1">Next.js Starter</h1>
+    <div className="min-h-screen bg-gray-900">
+      <Header />
+      <FilterSort />
+      <MovieList />
     </div>
   );
 }
+
+export default HomePage;

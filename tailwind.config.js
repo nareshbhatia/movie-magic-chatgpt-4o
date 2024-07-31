@@ -3,9 +3,6 @@ module.exports = {
   content: ['./src/**/*.{js,ts,jsx,tsx,mdx}'],
   theme: {
     extend: {
-      colors: {
-        primary: '#ff0000', // red for accent color
-      },
       fontFamily: {
         /*
          * Customize the `sans` to font Inter
@@ -16,6 +13,5 @@ module.exports = {
       },
     },
   },
-  darkMode: 'class', // enable dark mode
   plugins: [],
 };
