@@ -85,32 +85,43 @@ const movies = [
 
 function MovieList() {
   return (
-    <div className="text-white">
-      <div className="grid h-10 grid-cols-6 items-center bg-gray-700 px-4">
-        <span>#</span>
-        <span>Title</span>
-        <span>Rating</span>
-        <span>Year</span>
-        <span>Runtime</span>
-        <span>Poster</span>
-      </div>
-      {movies.map((movie, index) => (
-        <div
-          className="grid h-28 grid-cols-6 items-center border-b border-gray-700 bg-gray-800 px-4"
-          key={index}
-        >
-          <span>{movie.rank}</span>
-          <div>
-            <h3 className="font-bold">{movie.title}</h3>
-            <p className="text-sm">{movie.genres}</p>
+    <div className="px-8 text-white">
+      <header className="w-full border-b">
+        <div className="flex items-center gap-x-3 px-2 py-3 text-sm leading-none">
+          <div className="mr-2 hidden w-8 shrink-0 text-right sm:block">#</div>
+          <div className="w-16 flex-1 shrink-0 ">Title</div>
+          <div className="hidden w-12 shrink-0 text-center sm:block">
+            Rating
           </div>
-          <span>{movie.rating}</span>
-          <span>{movie.year}</span>
-          <span>{movie.runtime}</span>
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img alt={movie.title} className="h-24 w-16" src={movie.poster} />
+          <div className="hidden w-12 shrink-0 text-right sm:block">Year</div>
+          <div className="hidden w-12 shrink-0 text-right sm:block">
+            Runtime
+          </div>
         </div>
-      ))}
+      </header>
+      <div className="relative w-full overflow-auto py-2">
+        {movies.map((movie, index) => (
+          <div
+            className="flex items-center gap-x-3 rounded-md p-2 text-sm"
+            key={index}
+          >
+            <span className="mr-2 w-8 shrink-0 text-right">{movie.rank}</span>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              alt={movie.title}
+              className="h-24 w-16 shrink-0 object-cover"
+              src={movie.poster}
+            />
+            <div className="mr-6 min-w-0 flex-1 overflow-hidden">
+              <h3 className="font-bold">{movie.title}</h3>
+              <p className="text-sm">{movie.genres}</p>
+            </div>
+            <span className="w-12 shrink-0 text-center">{movie.rating}</span>
+            <span className="w-12 shrink-0 text-right">{movie.year}</span>
+            <span className="w-12 shrink-0 text-right">{movie.runtime}</span>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }

@@ -114,3 +114,10 @@ Here's a list of major deviations from requirements:
 4. Column widths of the table do not match that of the image.
 
 Still pretty good for automatic generation!
+
+### commit-6
+
+Manual tweaking to get closer to requirements. I spent about 45 minutes on this.
+Here's the resulting output.
+
+![commit-6](assets/commit-6.png)
